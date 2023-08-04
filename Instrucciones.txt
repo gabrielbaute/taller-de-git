@@ -12,3 +12,10 @@
     12.- Debemos copiar la dirección SSH del repositorio en git para establecer la conexión. El comando para establecer la conexión sería: 'git remote add origin git@github.com:gabrielbaute/taller-de-git.git' (con esta última dirección para nuestro caso). De esta forma vinculamos el repositorio en github con el repositorio en la PC.
     13.- Así, podemos ejecutar el comando indicado en (8).
     14.- Con 'git remote -v' se visualizan los repositorios vinculados, y con "git remote rm" y agregando la categoria (como origin) se borran los accesos a esos repositorios y se puede volver a crear uno nuevo.
+    15.- Para clonar un proyecto, se emplea el comando 'git clone dirección-ssh', con lo que lograríamos tener una copia (desde la terminal) en la carpeta que hemos escogido para ella.
+    16.- Para crear una rama, una vez clonado el proyecto, se tipea 'git checkout -b nomre-de-la-rama', lo que hara switch hacia la nueva rama.
+    17.- Con 'git checkout nombre-de-la-rama', nos desplazaremos hacia la rama especificada.
+    18.- git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+        (formato para la presentación del log, usar siempre este código)
+    19.- git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+        (creación de un alias para el código ubicado en el punto 18, de esta forma se usa solo el comando 'git lg', en vez de 'git log', y muestra el log contenido en el punto 18)
