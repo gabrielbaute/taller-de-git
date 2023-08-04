@@ -1,0 +1,14 @@
+    1.- Abrir una terminal integrada de Git (desde la carpeta del proyecto)
+    2.- Tipear git init
+    3.- En la terminal podemos tipear ls (para listar) y -la(para mostrar los archivos ocultos en la terminal)
+    4.- la "U" en los archivos significa "untracked" o no rastreados, no están sincronizados.
+    5.- Si tipeamos en alguno de esos archivos "git add nombre-de-archivo", la "U" cambia por "A". Si aparece una "M", significa "modificado", o "modifier"
+    6.- Con "git add .", todos los archivos del directorio pasan a la condición "A".
+    7.- Con "git commit -m "" " agregamos un comentario
+    8.- Con "git push -u origin master", empujamos la rama master
+    9.- Al tipear "pwd" me muestra el directorio donde estoy ubicado
+    10. - Para crearse una carpeta donde guardar las claves públicas y privadas, nos trasladamos a la carpeta ".ssh" (si no existe, la creamos con "mkdir .ssh"), una vez allí pegamos 'ssh-keygen -t ed25519 -C "your_email@example.com"', con lo que procederemos a crear la clave (se siguen los pasos).
+    11.- Con el comando "cat nombre de archivo" abrimos un archivo (lo usaremos para abrir la el archivo de la llave pública).
+    12.- Debemos copiar la dirección SSH del repositorio en git para establecer la conexión. El comando para establecer la conexión sería: 'git remote add origin git@github.com:gabrielbaute/taller-de-git.git' (con esta última dirección para nuestro caso). De esta forma vinculamos el repositorio en github con el repositorio en la PC.
+    13.- Así, podemos ejecutar el comando indicado en (8).
+    14.- Con 'git remote -v' se visualizan los repositorios vinculados, y con "git remote rm" y agregando la categoria (como origin) se borran los accesos a esos repositorios y se puede volver a crear uno nuevo.
